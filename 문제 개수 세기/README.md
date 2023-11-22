@@ -11,11 +11,11 @@
 
 ![image](https://github.com/rktndnjseh/algorithm/assets/150515419/31cfd790-fa1f-4862-9637-3eb5a3ef2431)
 ---
+```java
+import java.util.*;
+import java.io.*;
 
-    import java.util.*;
-    import java.io.*;
-
-    public class Main {
+public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -23,4 +23,6 @@
         StringTokenizer st = new StringTokenizer(str);
 
         System.out.println(st.countTokens());
-    }}
+    }
+}
+```
