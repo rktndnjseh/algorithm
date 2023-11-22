@@ -28,4 +28,4 @@ public class Main {
 ![image](https://github.com/rktndnjseh/algorithm/assets/150515419/31cfd790-fa1f-4862-9637-3eb5a3ef2431)
 ---
 
-사진 : [ideone.com](ideone.com)
+사진 : [ideone.com](https://ideone.com)
