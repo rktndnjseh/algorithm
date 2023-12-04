@@ -1,3 +1,6 @@
+//N을 입력받은후 다음부터
+//num을 입력받고 1부터 num까지 스택에 추가, 스택에서 num값만 뺀다.
+//새로 입력받은 num이 이미 스택에 있다면 스택에서 뺀다.
 import java.io.*;
 import java.util.*;
 
