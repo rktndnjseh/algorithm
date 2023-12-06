@@ -94,6 +94,8 @@ public class Main {
     // 학생이 앉을 수 있는 자리인지 확인하는 메서드
     private static boolean isValidSeatInOtherRows(int i, int previousRow, int nowRow) {
         for(int j=0; j<M; j++) {
+            //1 << j는 비트 연산에서 1을 왼쪽으로 j번 이동시키는 것을 의미한다
+            //2의 j제곱
             if((nowRow & (1<<j)) > 0 && (seats[i][j] == OCCUPIED_SEAT ||
                     (j-1 >= 0 && (previousRow & (1<<(j-1))) > 0) ||
                     (j+1 < M && (previousRow & (1<<(j+1))) > 0))) {
@@ -119,6 +121,8 @@ public class Main {
         //5 << 2  == 5*2^2
         //x << n == x * 2^n
         //1<<M == 1*2^M
+        //1 << M는 비트 연산에서 1을 왼쪽으로 M번 이동시키는 것을 의미한다
+        //2의 M제곱
         for(int i=0; i<(1<<M); i++) answer = Math.max(answer, dp[N-1][i]);
         return answer;
     }
