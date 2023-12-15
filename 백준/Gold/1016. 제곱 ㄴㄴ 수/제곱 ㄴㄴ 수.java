@@ -17,7 +17,8 @@ public class Main {
         // 작은 소수부터 큰 소수 순서로 나누어가며 제곱ㄴㄴ수 판별
         for(long i=2; i*i<=max; i++){
             long square = i*i;
-            long start = min % square == 0 ? min : min + (square - (min % square));
+//범위 내에서 첫 번째로 소수의 제곱으로 나누어 떨어지는 숫자를 찾는 코드
+            long start = (min % square == 0) ? min : min + (square - (min % square));
 
             for(long j=start; j<=max; j+=square){
                 numbers[(int)(j-min)]=0;
