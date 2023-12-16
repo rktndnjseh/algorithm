@@ -14,8 +14,8 @@ public class Main {
         int min = 1000001;
         for(int i=0; i<N; i++){
             num[i] = Integer.parseInt(st.nextToken());
-            if(max<num[i])max=num[i];
-            if(min>num[i])min=num[i];
+            min=Math.min(min, num[i]);
+            max=Math.max(max, num[i]);
         }
         bw.write(min+" "+max);
         bw.flush();
