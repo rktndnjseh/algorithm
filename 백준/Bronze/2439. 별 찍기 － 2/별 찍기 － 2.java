@@ -8,10 +8,15 @@ interface Main {
 
         int N = read();
 
-         for(int i=0;i<N;i++)
-        {
-            System.out.println(" ".repeat(N-i-1) + "*".repeat(i+1));
+        StringBuilder sb = new StringBuilder();
+        for(int i=1; i<=N; i++) {
+            for(int j=1; j<=N; j++) {
+                if(j<=N-i) sb.append(" ");
+                 else sb.append("*");
+            }
+            sb.append("\n");
         }
+        System.out.println(sb);
     }static int read(){
     int ASCII, result=0, isMinus=1;
     while((ASCII=inputBuffer[index[0]++])>32){
