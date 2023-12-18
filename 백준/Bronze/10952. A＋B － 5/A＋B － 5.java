@@ -5,9 +5,10 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
             while(true){
-                String[] command = br.readLine().split(" ");
-                int A = Integer.parseInt(command[0]);
-                int B = Integer.parseInt(command[1]);
+                String command = br.readLine();
+                int A = command.charAt(0) - '0';
+                int B = command.charAt(2) - '0';
+
                 if(A==0&B==0)break;
                 System.out.println(A+B);
             }
