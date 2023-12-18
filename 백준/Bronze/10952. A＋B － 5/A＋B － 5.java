@@ -8,7 +8,7 @@ public class Main {
                 String[] command = br.readLine().split(" ");
                 int A = Integer.parseInt(command[0]);
                 int B = Integer.parseInt(command[1]);
-                if(A==0&&B==0)break;
+                if(A==0&B==0)break;
                 System.out.println(A+B);
             }
 }
