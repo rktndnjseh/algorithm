@@ -5,8 +5,10 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String S = br.readLine();
 
-        for (char c = 'a'; c <= 'z'; c++) {
-            System.out.print(S.indexOf(c) + " ");
+        for (int i = 97; i <= 122; i++) {
+            char c = (char)i;
+            int index = S.indexOf(c);
+            System.out.print(index + " ");
         }
     }
 }
