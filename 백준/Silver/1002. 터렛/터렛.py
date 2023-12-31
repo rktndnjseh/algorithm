@@ -10,16 +10,15 @@ def calculate_possible_positions(x1, y1, r1, x2, y2, r2):
         return -1
 
     # 두 원이 외접하거나 내접하는 경우
-    elif distance == r1 + r2 or distance == abs(r1 - r2):
+    if distance == r1 + r2 or distance == abs(r1 - r2):
         return 1
 
     # 두 원이 만나는 점이 두 개인 경우
-    elif abs(r1 - r2) < distance < r1 + r2:
+    if abs(r1 - r2) < distance < r1 + r2:
         return 2
 
     # 두 원이 서로 만나지 않는 경우
-    else:
-        return 0
+    return 0
 
 
 # 테스트 케이스 개수 입력
