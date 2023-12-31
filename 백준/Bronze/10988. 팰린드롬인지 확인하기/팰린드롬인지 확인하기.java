@@ -7,7 +7,7 @@ public class Main {
         String N = scanner.next();
         int isPalindrome = 1;
 
-        for (int i = 0; i < N.length() / 2; i++) {
+        for (int i = 0; i < N.length(); i++) {
             if (N.charAt(i) != N.charAt(N.length() - 1 - i)) {
                 isPalindrome = 0;
                 break;
