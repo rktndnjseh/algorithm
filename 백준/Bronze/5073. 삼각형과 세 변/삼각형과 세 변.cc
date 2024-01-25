@@ -39,11 +39,6 @@ int main() {
         }
 
         cout << result << endl;
-
-        for (int i = 0; i < 3; i++) {
-            side[i] = 0;
-            side_cnt[side[i]] = 0;
-        }
     }
     return 0;
 }
