@@ -1,24 +1,26 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <vector>
 #include <algorithm>
-
 using namespace std;
 
-long long num[1000000];
-
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
     int N;
-    scanf("%d", &N);
-
+    cin >> N;
+    vector<int> array(N);
     for (int i = 0; i < N; i++) {
-        scanf("%lld", &num[i]);
+        cin >> array[i];
     }
 
-    sort(num, num + N);
+    sort(array.begin(), array.end());
 
     for (int i = 0; i < N; i++) {
-        printf("%lld\n", num[i]);
+        cout << array[i] << '\n';
     }
+
+    cout.flush();
 
     return 0;
 }
