@@ -2,17 +2,13 @@
 
 using namespace std;
 
-void insertion_sort(int list[], int n) {
-    int i, j, key;
-
-    for (i = 1; i < n; i++) {
-        key = list[i];
-
-        for (j = i - 1; j >= 0 && list[j] > key; j--) {
-            list[j + 1] = list[j];
+void bubble_sort(int list[], int n) {
+    for (int i = n - 1; i > 0; i--) {
+        for (int j = 0; j < i; j++) {
+            if (list[j] < list[j + 1]) {
+                swap(list[j], list[j + 1]);
+            }
         }
-
-        list[j + 1] = key;
     }
 }
 
@@ -26,9 +22,9 @@ int main() {
     for (int i = 0; i < 3; i++) {
         cin >> a[i];
     }
-    insertion_sort(a, 3);
+    bubble_sort(a, 3);
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 2; i >= 0; i--) {
         cout << a[i] << " ";
     }
     return 0;
