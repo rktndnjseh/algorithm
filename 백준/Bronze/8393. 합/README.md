@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 17628 KB, 시간: 212 ms
+메모리: 2020 KB, 시간: 0 ms
 
 ### 분류
 
@@ -12,27 +12,17 @@
 
 ### 제출 일자
 
-2023년 11월 16일 14:33:11
+2024년 3월 25일 19:10:46
 
 ### 문제 설명
 
-<p>John got a bad mark in math. The teacher gave him another task. John is to write a program which computes the sum of integers from 1 to n. If he manages to present a correct program, the bad mark will be cancelled.</p>
-
-<p>Write a program which:</p>
-
-<ul>
-	<li>reads the number n from the standard input,</li>
-	<li>computes the sum of integers from 1 to n,</li>
-	<li>writes the answer to the standard output.</li>
-</ul>
+<p>n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.</p>
 
 ### 입력 
 
- <p>The first and only line of the standard input contains one integer n (1 ≤ n ≤ 10 000).</p>
-
-<p> </p>
+ <p>첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다.</p>
 
 ### 출력 
 
- <p>One integer is to be written to the standard output. This integer should be the sum of integers from 1 to n.</p>
+ <p>1부터 n까지 합을 출력한다.</p>
 
